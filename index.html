@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accordion with New Blocks</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li>
+                    <div class="checkbox-container">
+                      <input type="checkbox" id="checkbox-toggle" />
+                      <label class="checkbox-toggle" for="checkbox-toggle">Checkbox</label>
+                      <div class="checkbox-wrapper">
+                          <h2 class="checkbox-title" id="checkbox-title-1">Checkbox</h2>    
+                          <input type="checkbox" class="custom-checkbox" id="custom_checkbox-1" />
+                          <h2 class="checkbox-title">Checkbox (disabled)</h2>
+                          <input type="checkbox" class="custom-checkbox" id="custom_checkbox-2" disabled/>
+                          <h2 class="checkbox-title">Checkbox (disabled and checked)</h2>
+                          <input type="checkbox" class="custom-checkbox" id="custom_checkbox-3" disabled checked/>
+                      </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="container">
+                        <input type="checkbox" id="accordion-toggle" />
+                        <label class="accordion-toggle" for="accordion-toggle">Accordion</label>
+                        <div class="accordion-wrapper">
+                            <h2 class="accordion-title">Accordion</h2>
+                            <input type="checkbox" id="acc_1_checkbox" />
+                            <div class="acc_to_select">
+                                <label class="acc_1_checkbox" for="acc_1_checkbox">Acc 1</label><br>
+                            </div>
+                            <div class="block_content acc_1_content"><p class="content_text">Acc 1 content</p></div>
+                            <input type="checkbox" id="acc_2_checkbox" />
+                            <div class="acc_to_select">
+                                <label class="acc_2_checkbox" for="acc_2_checkbox">Acc 2</label><br>
+                            </div>
+                            <div class="block_content acc_2_content"><p class="content_text">Acc 2 content</p></div>
+                            <input type="checkbox" id="acc_3_checkbox" />
+                            <div class="acc_to_select">
+                                <label class="acc_3_checkbox" for="acc_3_checkbox">Acc 3</label><br>                      
+                            </div>
+                            <div class="block_content acc_3_content"><p class="content_text">Acc 3 content</p></div>                    
+                            <h2 class="accordion-title">Accordion (collapsible)</h2>
+                            <input type="radio" name="acc" id="acc_4" checked/>
+                            <div class="acc_to_select">
+                                <label class="acc_4" for="acc_4">Acc 4</label><br>
+                            </div>
+                            <div class="block_content acc_4_content"><p class="content_text">Acc 4 content</p></div>
+                            <input type="radio" name="acc" id="acc_5"/>
+                            <div class="acc_to_select">
+                                <label class="acc_5" for="acc_5">Acc 5</label><br>
+                            </div>
+                            <div class="block_content acc_5_content"><p class="content_text">Acc 5 content</p></div>
+                            <input type="radio" name="acc" id="acc_6"/>
+                            <div class="acc_to_select">
+                                <label class="acc_6" for="acc_6">Acc 6</label><br>                      
+                            </div>
+                            <div class="block_content acc_6_content"><p class="content_text">Acc 6 content</p></div>
+                        </div>
+                    </div>                          
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdown-button">+ Drop Down</button>
+                        <div class="dropdown-content">
+                            <a href="#">Checkbox</a>
+                            <a href="#">Accordion</a>
+                            <a href="#">Menu</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>    
+</body>
+</html>
